@@ -12,13 +12,12 @@ also, this playlist explains how to write an interpreter in C
 
 here's a  diagram that simplify the understanding of the tokenizer algorithm as a first step in MiniShell project ( made by me and **@nakebli**) 
 
-[tokenizer_2.tldr](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b41e626d-1a8e-4007-a0e5-be048715a8e1/tokenizer_2.tldr)
+
 
 that was in a general context you could start from here though 
 
 resurses https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
 
-1967523
 
 an algorithm where I have a a doubly linked list as input and this linked list contains commands like “ls -ls, echo, cat, grep ..” tokenized as “WORD” in a node and command like “|, &&, ||, >, >>, < <<” tokenized in each by a name in a single node and also space tokenized as “SPACE” in a node but only when its between “WORD”, I want to take this input and using recursive descent parsing to take the doubly linked list ant turn it into a syntax tree, I want something like this layout of functions I made “”
 
