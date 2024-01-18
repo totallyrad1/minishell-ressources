@@ -16,13 +16,13 @@ here's a  diagram that simplify the understanding of the tokenizer algorithm as 
 
 that was in a general context you could start from here though 
 
-resurses https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
+ressources https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
 
 
 an algorithm where I have a a doubly linked list as input and this linked list contains commands like “ls -ls, echo, cat, grep ..” tokenized as “WORD” in a node and command like “|, &&, ||, >, >>, < <<” tokenized in each by a name in a single node and also space tokenized as “SPACE” in a node but only when its between “WORD”, I want to take this input and using recursive descent parsing to take the doubly linked list ant turn it into a syntax tree, I want something like this layout of functions I made “”
 
 what I'm doing in the parsing : I have a doubly linked list filled with tokens (commands)
 
-the main function for implementing recursive descent parsing called build_tree
+the main function for implementing recursive descent parsing 
 
-this function takes the linked list and call the first function from the chained function to handle every case in the command line, it calls the and_or_case() function that handles the case when the content of the node is “&& or ||”, what this function do is at first it calls another function who handles pipe “|” we do this so that the command with the most precedent ends up the top of the tree, then I check if the content of the node is “&& or ||” if yes
+explanation video https://www.youtube.com/watch?v=SToUyjAsaFk
